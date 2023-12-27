@@ -10,7 +10,7 @@ const camera = new SPLAT.Camera();
 const controls = new SPLAT.OrbitControls(camera, canvas);
 
 async function main() {
-    const url = "https://res.cloudinary.com/duufhvbhi/raw/upload/v1703572411/files/toyo/gs_new_splat_o1bkku.splat";
+    const url = "asset/mahabs.splat";
 
     await SPLAT.Loader.LoadAsync(url, scene, (progress) => progressIndicator.value = progress * 100);
     progressDialog.close();
@@ -33,3 +33,4 @@ async function main() {
 }
 
 main();
+
